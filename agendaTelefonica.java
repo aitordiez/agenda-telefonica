@@ -17,10 +17,18 @@ public class agendaTelefonica
     
     public void enterNumber(String name, String number){
         nombresYNumeros.put(name,number);
+        
     }
     
     public String lookupNumber(String name){
         System.out.println(nombresYNumeros.get(name));
         return name;
+    }
+    
+    /**
+     * Print all keys
+     */
+    public void printAllNames(){
+        System.out.println(nombresYNumeros.keySet());
     }
 }
